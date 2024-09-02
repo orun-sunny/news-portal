@@ -61,13 +61,16 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
-      {/* <div className="navbar-end">
+      <div className="navbar-end">
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
           <div className="w-10 rounded-full">
             <img src={userDefaultPic} />
           </div>
         </label>
-        {user ? (
+        <Link to="/login">
+          <button className="btn">Login</button>
+        </Link>
+        {/* {user ? (
           <button onClick={handleSignOut} className="btn">
             Sign Out
           </button>
@@ -75,8 +78,8 @@ const Navbar = () => {
           <Link to="/login">
             <button className="btn">Login</button>
           </Link>
-        )}
-      </div> */}
+        )} */}
+      </div>
     </div>
   );
 };
